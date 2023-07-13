@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Sono riuscito a creare la pagina dinamica di Locations e sono riuscito a fornirgli le locations tramite api. Non sono arrivato a farlo anche per le singole pagine Location.
