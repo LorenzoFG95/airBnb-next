@@ -23,10 +23,22 @@ const DefaultLayout = ({ children }) => {
       name: "Locations",
       value: "/locations",
     },
+    {
+      id: 5,
+      name: "Locations Server side",
+      value: "/SSRlocations",
+    },
   ];
 
   return (
     <div className={styles.DefaultLayout}>
+      <style jsx global>{`
+        body {
+          margin: 0px;
+          padding: 0px;
+          min-height: 100vh;
+        }
+      `}</style>
       <div className={styles.navbar}>
         <ul>
           {links.map((link) => (

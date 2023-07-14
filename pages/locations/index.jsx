@@ -1,3 +1,4 @@
+import styles from "../../styles/Locations.module.scss";
 import Link from "next/link";
 import DefaultLayout from "../layouts/defaultLayout";
 // import { roomList } from "../../mocks/reservations";
@@ -18,12 +19,14 @@ export default function Locations() {
   } else {
     return (
       <DefaultLayout>
-        <div className="Products">
+        <div className={styles.Products}>
           {" "}
           {roomList.map(({ name, price, id }) => (
-            <div key={id}>
+            <div className={`${styles.room} `} key={id}>
               <h2>{name}</h2>
-              <h3>{`${price}Euro`}</h3>
+              <div className={styles.card__info}>
+                <h3>{`${price} $`}</h3>
+              </div>
               <Link href={`/locations/${id}`}>
                 <button>Prenota</button>
               </Link>
